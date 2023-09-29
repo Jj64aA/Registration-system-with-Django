@@ -1,0 +1,41 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {% comment %} ! My Css  {% endcomment %}
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <link rel="website icon" type="png" href="{% static '/images/logo.png'%}" >
+    <title>Register Cntic Club 2023/2024 </title>
+</head>
+<body >
+   <div id="google_translate_element"></div>
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script>
+      function googleTranslateElementInit(){
+        new google.translate.TranslateElement(
+            {pageLanguage : 'en'},
+            'google_translate_element');
+      };
+   <div class="container">
+      <div class="alert alert-success mt-5" role="alert">
+         <p>Hello <b>{{f_name}}</b> , </p>
+         <p>
+            You have successfully registered for <b>CNTIC CLUB.</b><br>
+         </p>
+         <p>
+            Please note that your registration is not yet complete. Please approach the club office as soon as possible, in order to obtain your registration certificate and badge.
+            <br>
+            Club location: <b>Faculty of Modern Technologies for Information and Communication - Ouargla </b> <a style="text-decoration: none;" href="https://www.google.com/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9+%D9%84%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA+%D9%88%D8%A7%D9%84%D8%A5%D8%AA%D8%B5%D8%A7%D9%84%E2%80%AD/@31.9407249,5.2897071,16z/data=!4m15!1m8!3m7!1s0x125d6b8578c4bca9:0x63c3e82d2c9a71d!2z2YjYsdmC2YTYqeKAjg!3b1!8m2!3d31.9527411!4d5.3335348!16zL20vMGI5NXhu!3m5!1s0x125d690d70597005:0x7a40f024689dc438!8m2!3d31.9390059!4d5.2871627!16s%2Fg%2F11b7hm1v4j?entry=ttu">Loction Map</a>
+            </p>
+           <a href="{% url 'register-records' %}" style="text-decoration: none;">Get Register Page</a>
+       </div>
+   </div>
+   
+</body>
+</html>
